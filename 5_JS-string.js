@@ -1,7 +1,5 @@
 const text = 'asdfjklqwertyuiop'
 
-
-
 console.log(text.length)  // STRING LENGTH
 
 console.log(text.charAt(1))  // charAt(index)
@@ -9,7 +7,6 @@ console.log(text.charAt(1))  // charAt(index)
 console.log(text.charCodeAt(0))  //charCodeAt(index)
 
 console.log(text[2])
-
 
 
 
@@ -21,7 +18,6 @@ const concatFullName = fName.concat(" ", lName, ' ', 'Khan')
 const fullName = fName + ' ' + lName;
 console.log(concatFullName)
 console.log(fullName)
-
 
 
 
@@ -42,10 +38,6 @@ console.log(sliceText2)
 
 
 
-
-
-
-
 // JavaScript String substring, substr
 const dev = 'Development'
 
@@ -63,8 +55,6 @@ console.log(dev.substring(-4))
 
 
 
-
-
 // JavaScript String toUpperCase, toLowerCase
 const userName = 'AHAD'
 const customerName = 'raja'
@@ -76,15 +66,12 @@ console.log(adminName.toLowerCase())
 
 
 
-
 const sentence = '   Hello world    '
 console.log(sentence.trim())// JavaScript String trim()
 
 console.log(sentence.trimStart()) //JavaScript String trimstart
 
 console.log(sentence.trimEnd()) //JavaScript String trimEnd
-
-
 
 
 
@@ -115,8 +102,6 @@ console.log(text5.replaceAll('more','extra'))
 
 
 
-
-
 // JavaScript String split()
 const sentence2 = 'I love Programming'
 console.log(sentence2.split(" "))
@@ -127,13 +112,9 @@ console.log(splitFruits)
 
 
 
-
 const text3 = 'Where are you fro?'
 console.log(text3.indexOf('are'))
 console.log(text3.lastIndexOf('are'))
-
-
-
 
 
 
@@ -146,7 +127,6 @@ console.log(text4.match(/in/gi))
 
 const text6 = "The cats were playing in the garden while other cats watched from the fence."
 console.log([...text6.matchAll(/cats/g)])
-
 
 
 const text7 = 'Hello world cup'
