@@ -140,33 +140,58 @@ else {
 
 
 // Not equal
-if(n !=v){
+if (n != v) {
     console.log(true)
 }
-else{
+else {
     console.log(false)
 }
 
 
-if(n !==v){
+if (n !== v) {
     console.log(true)
 }
-else{
+else {
     console.log(false)
 }
 
 
 
 
-console.log(5 >5)
-console.log(5<5)
+console.log(5 > 5)
+console.log(5 < 5)
 
-console.log(4>=4)
-console.log(4<=3)
+console.log(4 >= 4)
+console.log(4 <= 3)
 
 
-console.log(8 >'12')
+console.log(8 > '12')
 
-console.log(2<'mir')
+console.log(2 < 'mir')
 
 console.log(6 == 'km')
+
+
+
+
+const appleCost = 45;
+const mangoCost = 50;
+const totalCost = appleCost + mangoCost;
+const givenMoney = 100;
+
+const shoopKeeperReturn = givenMoney - totalCost;
+console.log(shoopKeeperReturn)
+
+
+
+const Mathematics = 80;
+const Biology = 93;
+const Chemistry = 70;
+const Physics = 90;
+const Bangla = 85;
+
+const totalNum = Mathematics + Biology + Chemistry + Physics + Bangla;
+const totalSub = 5;
+
+const avgMarks = totalNum / totalSub;
+console.log(parseFloat(avgMarks.toFixed(2)))

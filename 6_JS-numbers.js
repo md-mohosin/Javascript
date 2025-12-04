@@ -45,7 +45,4 @@ console.log(isNaN(strNum2))
 console.log(Number.isSafeInteger(strNum))
 console.log(Number.isSafeInteger(10))
 
-
-
-
 console.log(2**4)
