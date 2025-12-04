@@ -12,6 +12,7 @@ console.log('20' - '10')
 console.log(10 + 'mango')
 console.log(10 - 'mango') // NaN => Not a Number
 
+console.log('--------')
 console.log((200).toString(3))
 
 
@@ -43,3 +44,8 @@ console.log(isNaN(strNum2))
 
 console.log(Number.isSafeInteger(strNum))
 console.log(Number.isSafeInteger(10))
+
+
+
+
+console.log(2**4)

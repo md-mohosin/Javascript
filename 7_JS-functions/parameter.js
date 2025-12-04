@@ -27,6 +27,9 @@ cube(cubeNum)
 
 function power(num, power) {
     console.log(Math.pow(num, power))
+    console.log('--------------------------------')
+    console.log(num ** power)
+    console.log('--------------------------------')
 }
 power(4, 2)
 power(5, 3)
