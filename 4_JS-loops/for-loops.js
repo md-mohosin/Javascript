@@ -77,3 +77,10 @@ console.log('even numbr sum from 51 to 85 is', evenNumSum)
 for (let i = 1; i <= 10; i++) {
     console.log(`9 x ${i} = ${i * 9}`)
 }
+
+
+
+
+for (let n = 81; n >= 65; n--) {
+    console.log(n)
+}
