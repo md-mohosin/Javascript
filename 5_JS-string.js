@@ -136,3 +136,17 @@ console.log(text7.includes('world',8))
 
 console.log(text7.startsWith('Hello'))
 console.log(text7.endsWith('cup'))
+
+
+
+const sentence3 = 'I am learning web dev'
+let reverse = ''
+for(const letter of sentence3){
+    reverse = letter + reverse
+}
+console.log(reverse)
+
+const reversSentence3 = sentence3.split('').reverse()
+const reversSentence4 = sentence3.split('').reverse().join('')
+console.log(reversSentence3)
+console.log(reversSentence4)
