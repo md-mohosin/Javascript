@@ -5,6 +5,27 @@ while (n < 15) {
 }
 
 
+
+let oddNum = 61;
+while (oddNum <= 100) {
+    if (oddNum % 2 != 0) {
+        console.log('odd number:', oddNum)
+    }
+    oddNum++
+}
+
+
+
+let evenNum = 78;
+while (evenNum <= 98) {
+    if (evenNum % 2 == 0) {
+        console.log('even number:', evenNum)
+    }
+    evenNum++
+}
+
+
+
 let k = 1;
 while (k < 6) {
     k++
@@ -14,6 +35,13 @@ while (k < 6) {
     console.log(`k ${k}`)
 }
 
+
+
+let negNum = 21;
+while(negNum >=15){
+    console.log(negNum)
+    negNum--
+}
 
 
 
