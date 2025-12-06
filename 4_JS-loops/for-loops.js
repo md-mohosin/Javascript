@@ -84,3 +84,22 @@ for (let i = 1; i <= 10; i++) {
 for (let n = 81; n >= 65; n--) {
     console.log(n)
 }
+
+
+
+
+for (let num = 1; num <= 100; num++) {
+    if (num % 3 == 0 && num % 5 == 0) {
+        console.log(num, 'This number are divisible by 5 & 3')
+    }
+}
+
+
+
+
+for (let n = 1; n < 20; n++) {
+    console.log(n)
+    if (n > 10) {
+        break
+    }
+}

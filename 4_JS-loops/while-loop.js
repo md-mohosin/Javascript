@@ -26,13 +26,13 @@ while (evenNum <= 98) {
 
 
 
-let k = 1;
-while (k < 6) {
-    k++
-    if (k === 3) {
+let m = 1;
+while (m < 6) {
+    m++
+    if (m === 3) {
         continue
     }
-    console.log(`k ${k}`)
+    console.log(`m ${m}`)
 }
 
 
