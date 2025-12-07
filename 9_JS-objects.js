@@ -15,3 +15,115 @@ person.name = 'Bilal'
 person['age'] = 32
 console.log(person.name)
 console.log(person)
+
+
+
+
+
+const computer = {
+    brand: "HP",
+    model: "Pavilion",
+    specs: {
+        processor: {
+            generation: "13th Gen",
+            baseClock: "3.2 GHz",
+            turboClock: "4.7 GHz",
+        },
+        storage: {
+            type: "SSD",
+            size: "1TB",
+        }
+    },
+    accessories: ["Mouse", "Keyboard", "Headphone"]
+};
+
+console.log(computer)
+
+console.log(Object.keys(computer))
+console.log(Object.values(computer))
+
+console.log(computer.brand)
+
+console.log(computer.specs.processor)
+
+const computerStorage = computer.specs.storage
+console.log(computerStorage)
+
+console.log(computer.accessories[1])
+
+delete computer.brand
+console.log(computer)
+
+
+
+
+
+
+
+const mobile = {
+    brand: "Samsung",
+    model: "Galaxy A55",
+    price: 45000,
+    color: "Black",
+    storage: "128GB",
+    features: ["Fingerprint", "5G", "Fast Charging"], // array allowed
+};
+console.log(mobile)
+
+for (const prop in mobile) {
+    console.log(prop, '-', mobile[prop])
+    console.log()
+}
+
+
+
+
+
+
+const colors = {
+    red: "#ff0000",
+    green: "#00ff00",
+    blue: "#0000ff",
+    "golden rod": '#daa520'
+};
+console.log(colors["golden rod"])
+
+
+
+
+const car = {
+    make: "Toyota",
+    model: "Corolla",
+    year: 2020
+};
+car['passenger capacity'] = 5
+console.log(car)
+
+
+
+
+
+
+let student = {
+    name: 'Ariana Grande',
+    age: 21,
+    city: 'Gaibandha',
+    isStudent: true
+};
+const studentProperty = Object.keys(student)
+const studentPropertyLength = studentProperty.length;
+console.log(studentPropertyLength)
+
+
+
+
+
+let myObject = {
+    name: 'John Doe',
+    age: 25,
+    city: 'Example City',
+    isStudent: true
+};
+for (const key in myObject) {
+    console.log(`Key: ${key} | type: ${typeof myObject[key]}`)
+}
