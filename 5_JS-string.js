@@ -87,18 +87,18 @@ console.log(welcome.repeat(3)) //JavaScript String repeat()
 
 // Replacing String Content
 const actor = 'Asif raza mir'
-console.log(actor.replace('Asif','Ahad')) 
+console.log(actor.replace('Asif', 'Ahad'))
 
 
 const actress = 'sehar khan'
-console.log(actress.replace(/SEHAR/i,'Ramsha'))
+console.log(actress.replace(/SEHAR/i, 'Ramsha'))
 
 
 const text5 = "more and more people want to learn more every day."
-console.log(text5.replace(/more/g,'extra'))
+console.log(text5.replace(/more/g, 'extra'))
 
-console.log(text5.replace('more','extra'))
-console.log(text5.replaceAll('more','extra'))
+console.log(text5.replace('more', 'extra'))
+console.log(text5.replaceAll('more', 'extra'))
 
 
 
@@ -131,7 +131,7 @@ console.log([...text6.matchAll(/cats/g)])
 
 const text7 = 'Hello world cup'
 console.log(text7.includes('Hello'))
-console.log(text7.includes('world',8))
+console.log(text7.includes('world', 8))
 
 
 console.log(text7.startsWith('Hello'))
@@ -141,7 +141,7 @@ console.log(text7.endsWith('cup'))
 
 const sentence3 = 'I am learning web dev'
 let reverse = ''
-for(const letter of sentence3){
+for (const letter of sentence3) {
     reverse = letter + reverse
 }
 console.log(reverse)
@@ -150,3 +150,54 @@ const reversSentence3 = sentence3.split('').reverse()
 const reversSentence4 = sentence3.split('').reverse().join('')
 console.log(reversSentence3)
 console.log(reversSentence4)
+
+
+
+
+
+
+const sentence4 = 'I am learning Programming'
+
+const countA = []
+for (const letter of sentence4) {
+    if (letter == 'a') {
+        countA.push(letter)
+    }
+}
+console.log(countA.length)
+
+
+
+
+
+const sentence5 = "Aaa! Aarav asked Alina about a new car."
+
+let count_a_A = 0;
+for (const letter of sentence5) {
+    if (letter == 'a' || letter == 'A') {
+        count_a_A++;
+    }
+}
+console.log(count_a_A)
+
+
+
+
+
+const sentence6 = "A curious idea can evolve quickly."
+for(const letter of sentence6){
+    if(letter == "a e i o u"){
+        console.log(true)
+    }
+}
+
+
+
+
+
+let str = "xX Hello xX World";
+
+str = str.replace(/x/g, "y");  // replace all x → y
+str = str.replace(/X/g, "Y");  // replace all X → Y
+
+console.log(str);
