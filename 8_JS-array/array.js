@@ -44,7 +44,7 @@ console.log(Array.isArray(user))
 
 
 
-const fruites = ['Apple','Mango','Orange','Guava','Lychee']
+const fruites = ['Apple', 'Mango', 'Orange', 'Guava', 'Lychee']
 
 console.log(fruites[2])
 
@@ -57,11 +57,11 @@ console.log(fruites)
 
 
 
-const touristPlace = ["Cox's-bazar",'Sundarban','Bandarban']
+const touristPlace = ["Cox's-bazar", 'Sundarban', 'Bandarban']
 
 touristPlace.push('Himchari')
 
-touristPlace.push('Nilgiri','Jaflong')
+touristPlace.push('Nilgiri', 'Jaflong')
 
 touristPlace.pop()
 
@@ -71,8 +71,8 @@ console.log(touristPlace)
 
 
 
-const arr1 = ['Ahad','Bilal','Wahaj','Danish']
-const arr2 = ['Yumna','Dure','Dananeer','Sehar']
+const arr1 = ['Ahad', 'Bilal', 'Wahaj', 'Danish']
+const arr2 = ['Yumna', 'Dure', 'Dananeer', 'Sehar']
 
 const concatArray = arr1.concat(arr2)
 console.log(concatArray)
