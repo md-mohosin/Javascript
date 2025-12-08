@@ -76,3 +76,24 @@ const arr2 = ['Yumna', 'Dure', 'Dananeer', 'Sehar']
 
 const concatArray = arr1.concat(arr2)
 console.log(concatArray)
+
+
+
+
+
+const original = [11, 13, 44, 15, 76, 33]
+const copy = [...original]
+copy[0] = 999
+console.log(copy)
+console.log(original)
+
+
+
+
+const array2D = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+]
+const updateRow = array2D[1][0] = 99
+console.log(array2D)
