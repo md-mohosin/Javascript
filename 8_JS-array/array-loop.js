@@ -43,11 +43,28 @@ console.log(reverse_words)
 const arry = [11, 12, 13, 14, 15, 16]
 
 let oddNumSum = 0;
-let oddNum = 0
+let oddNum = []
 for (const num of arry) {
     if (num % 2 !== 0) {
-        oddNum ++
+        oddNum.push(num)
         oddNumSum += num
     }
 }
-console.log(oddNumSum / oddNum)
+console.log(oddNumSum / oddNum.length)
+
+
+
+
+
+
+const arry2 = [12, 43, 13, 44, 15, 60, 4]
+
+let evenNumSum = 0;
+let evenNum = 0;
+for (const num of arry2) {
+    if (num % 2 == 0) {
+        evenNum++
+        evenNumSum += num
+    }
+}
+console.log(evenNumSum / evenNum)
