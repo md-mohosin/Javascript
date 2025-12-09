@@ -97,3 +97,8 @@ const array2D = [
 ]
 const updateRow = array2D[1][0] = 99
 console.log(array2D)
+
+
+
+
+
