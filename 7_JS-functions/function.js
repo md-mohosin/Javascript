@@ -59,19 +59,27 @@ console.log(min)
 
 
 
-const phones = [
+const allPhones = [
     { name: "Xiaomi", price: 22000, cemera: '12mp', color: 'Black' },
-    { name: "Xiaomi", price: 22000, cemera: '12mp', color: 'Black' },
-    { name: "Xiaomi", price: 22000, cemera: '12mp', color: 'Black' },
-    { name: "Xiaomi", price: 22000, cemera: '12mp', color: 'Black' }
+    { name: "Oppo", price: 11000, cemera: '12mp', color: 'Black' },
+    { name: "Samsung", price: 34000, cemera: '12mp', color: 'Black' },
+    { name: "iPhone", price: 99000, cemera: '12mp', color: 'Black' }
 ]
 
+
 function getCheapest(phones) {
-    for (const phone of phones) {
-        console.log(phone)
+    let chipest = phones[0].price
+    for (const phonePrice of phones) {
+        if (chipest > phonePrice.price) {
+            chipest = phonePrice.price
+        }
     }
+    return chipest;
 }
-getCheapest(phones)
+
+const getCheapestPhone = getCheapest(allPhones)
+console.log('cheapest phone price:', getCheapestPhone)
+
 
 
 
@@ -89,10 +97,34 @@ const products = [
 function getAllPrice(products) {
     let sum = 0;
     for (const product of products) {
-        // const price = product.price;
-        sum +=product.price
+        sum += product.price
     }
     return sum
 }
 const getPrice = getAllPrice(products)
 console.log(getPrice)
+
+
+
+
+
+
+
+const allBooks = [
+    { name: 'Story books', price: 700, quantity: 3 },
+    { name: 'Math books', price: 300, quantity: 1 },
+    { name: 'Bangla books', price: 200, quantity: 2 },
+    { name: 'Physics books', price: 900, quantity: 4 },
+    { name: 'Islamic books', price: 500, quantity: 3 }
+]
+
+function getBooksPrice(books) {
+    let total = 0;
+for(const book of books){
+    const totalPrice = book.price * book.quantity
+    total +=totalPrice
+}
+return total
+}
+const booksPrice = getBooksPrice(allBooks)
+console.log(booksPrice)
