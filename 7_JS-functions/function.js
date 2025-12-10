@@ -43,6 +43,11 @@ console.log(minNum)
 const nums = [2000, 1000, 900, 300, 9000, 4000]
 
 function getMinNum(numbers) {
+
+    if (!Array.isArray(numbers)) {
+        return 'Give a valid array.'
+    }
+
     let min = nums[0]
     for (const num of numbers) {
         if (num < min) {
@@ -120,11 +125,11 @@ const allBooks = [
 
 function getBooksPrice(books) {
     let total = 0;
-for(const book of books){
-    const totalPrice = book.price * book.quantity
-    total +=totalPrice
-}
-return total
+    for (const book of books) {
+        const totalPrice = book.price * book.quantity
+        total += totalPrice
+    }
+    return total
 }
 const booksPrice = getBooksPrice(allBooks)
 console.log(booksPrice)
@@ -135,23 +140,23 @@ console.log(booksPrice)
 
 
 const allDevices = [
-  { id: 1, name: "iPhone 14", type: "Mobile", price: 120000, brand: "Apple" },
-  { id: 2, name: "Galaxy S23", type: "Mobile", price: 110000, brand: "Samsung" },
-  { id: 3, name: "HP Pavilion", type: "Laptop", price: 85000, brand: "HP" },
-  { id: 4, name: "Dell XPS 13", type: "Laptop", price: 135000, brand: "Dell" },
-  { id: 5, name: "iPad Pro", type: "Tablet", price: 95000, brand: "Apple" },
-  { id: 6, name: "Apple Watch", type: "Smart Watch", price: 42000, brand: "Apple" },
-  { id: 7, name: "JBL Charge 5", type: "Speaker", price: 18000, brand: "JBL" }
+    { id: 1, name: "iPhone 14", type: "Mobile", price: 120000, brand: "Apple" },
+    { id: 2, name: "Galaxy S23", type: "Mobile", price: 110000, brand: "Samsung" },
+    { id: 3, name: "HP Pavilion", type: "Laptop", price: 85000, brand: "HP" },
+    { id: 4, name: "Dell XPS 13", type: "Laptop", price: 135000, brand: "Dell" },
+    { id: 5, name: "iPad Pro", type: "Tablet", price: 95000, brand: "Apple" },
+    { id: 6, name: "Apple Watch", type: "Smart Watch", price: 42000, brand: "Apple" },
+    { id: 7, name: "JBL Charge 5", type: "Speaker", price: 18000, brand: "JBL" }
 ];
 
-function getDevice(devices,search){
+function getDevice(devices, search) {
     let matchedProduct = []
-    for(const device of devices){
-        if(device.type.toLowerCase().includes(search.toLowerCase())){
+    for (const device of devices) {
+        if (device.type.toLowerCase().includes(search.toLowerCase())) {
             matchedProduct.push(device)
         }
     }
     return matchedProduct
 }
 
-console.log(getDevice(allDevices,'watch')) 
+console.log(getDevice(allDevices, 'watch')) 
