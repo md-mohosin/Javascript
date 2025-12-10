@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Welcome to my dom</h1>
+    <ul>
+        <li>Jalali set</li>
+        <li>Bonobash</li>
+    </ul>
+
+    <h3 class="text">Shafayet</h3>
+    <h3 class="text">Dom</h3>
+
+    <script>
+        document.getElementById('heading').style.color = 'red'
+
+        const textCollection = document.getElementsByClassName('text')
+        for (const text of textCollection) {
+            text.style.color = 'violet'
+        }
+
+        const liCollection = document.getElementsByTagName('li')
+        for (const li of liCollection) {
+            console.log(li.innerText)
+            li.style.color = 'blue'
+        }
+
+    </script>
+</body>
+
+</html>
