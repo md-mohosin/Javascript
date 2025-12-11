@@ -6,51 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .bg-color{
+        .bg-color {
             background-color: yellowgreen;
         }
     </style>
 </head>
 
 <body>
-    <h1 id="heading">Welcome to my dom</h1>
-    <ul>
-        <li>Jalali set</li>
-        <li>Bonobash</li>
-    </ul>
 
-    <h3 class="text">Shafayet</h3>
-    <h3 class="text">Hum</h3>
+    <main id="main-container">
+        <h1 id="heading">Welcome to my dom</h1>
 
-    <p>DOM</p>
-    <p>Document Object model</p>
+        <h3 id="shafayet" class="text bg-color">Shafayet</h3>
+        <h3 class="text">Hum</h3>
+
+        <p>DOM</p>
+        <p>Document Object model</p>
+
+        <section id="jalali">
+            <ul>
+                <li>Jalali set</li>
+                <li>Bonobash</li>
+            </ul>
+        </section>
+
+        <section class="fruits-container">
+            <h1 id="fruits-title">Favourite fruits</h1>
+            <ul>
+                <li>Mango</li>
+                <li>Banana</li>
+                <li>Jackfruit</li>
+            </ul>
+        </section>
 
 
-    <section class="fruits-container">
-        <h1 id="fruits-title">Fav fruits</h1>
-        <ul>
-            <li>Mango</li>
-            <li>Banana</li>
-            <li>Jackfruit</li>
-        </ul>
-    </section>
-
-
-    <section id="places" class="places-container">
-        <h1 id="places-title">Fav fruits</h1>
-        <ul>
-            <li>Sundarbon</li>
-            <li>Katabon</li>
-            <li>shalbon</li>
-        </ul>
-    </section>
-
+        <section id="places" class="places-container">
+            <h1 id="places-title">Favourite Places</h1>
+            <ul>
+                <li>Sundarbon</li>
+                <li>Katabon</li>
+                <li>shalbon</li>
+            </ul>
+        </section>
+    </main>
 
     <script>
         document.getElementById('heading').style.color = 'red'
         document.getElementById('heading').innerText = 'My first DOM'
-        document.getElementById('heading').style.backgroundColor='blue'
-        document.getElementById('heading').style.padding='7px'
+        document.getElementById('heading').style.backgroundColor = 'blue'
+        document.getElementById('heading').style.padding = '7px'
 
         const textCollection = document.getElementsByClassName('text')
         for (const text of textCollection) {
@@ -65,12 +69,12 @@
 
 
         const liFruits = document.querySelectorAll('.fruits-container')
-        for(const li of liFruits){
+        for (const li of liFruits) {
             li.style.backgroundColor = 'yellow'
-            li.style.padding='5px'
-            li.style.width='400px'
+            li.style.padding = '5px'
+            li.style.width = '400px'
         }
-    
+
 
         document.getElementById('places').classList.add('bg-color')
 
@@ -80,6 +84,8 @@
         liPlaces.style.color = 'red'
 
     </script>
+    <script src="./.js/append.js"></script>
+    <script src="./.js/styleIn.js"></script>
 </body>
 
 </html>
