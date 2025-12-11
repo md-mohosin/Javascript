@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .bg-color{
+            background-color: yellowgreen;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,7 +36,7 @@
     </section>
 
 
-    <section class="places-container">
+    <section id="places" class="places-container">
         <h1 id="places-title">Fav fruits</h1>
         <ul>
             <li>Sundarbon</li>
@@ -43,6 +48,9 @@
 
     <script>
         document.getElementById('heading').style.color = 'red'
+        document.getElementById('heading').innerText = 'My first DOM'
+        document.getElementById('heading').style.backgroundColor='blue'
+        document.getElementById('heading').style.padding='7px'
 
         const textCollection = document.getElementsByClassName('text')
         for (const text of textCollection) {
@@ -56,14 +64,19 @@
         }
 
 
-        const liFruits = document.querySelectorAll('.fruits-container li')
-        for (const li of liFruits) {
-            console.log(li.innerText)
+        const liFruits = document.querySelectorAll('.fruits-container')
+        for(const li of liFruits){
+            li.style.backgroundColor = 'yellow'
+            li.style.padding='5px'
+            li.style.width='400px'
         }
+    
+
+        document.getElementById('places').classList.add('bg-color')
 
 
         const liPlaces = document.querySelector('.places-container li')
-        console.log(liPlaces.innerHTML)
+        console.log(liPlaces.innerText)
         liPlaces.style.color = 'red'
 
     </script>
