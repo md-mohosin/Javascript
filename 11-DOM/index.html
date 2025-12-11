@@ -15,7 +15,31 @@
     </ul>
 
     <h3 class="text">Shafayet</h3>
-    <h3 class="text">Dom</h3>
+    <h3 class="text">Hum</h3>
+
+    <p>DOM</p>
+    <p>Document Object model</p>
+
+
+    <section class="fruits-container">
+        <h1 id="fruits-title">Fav fruits</h1>
+        <ul>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Jackfruit</li>
+        </ul>
+    </section>
+
+
+    <section class="places-container">
+        <h1 id="places-title">Fav fruits</h1>
+        <ul>
+            <li>Sundarbon</li>
+            <li>Katabon</li>
+            <li>shalbon</li>
+        </ul>
+    </section>
+
 
     <script>
         document.getElementById('heading').style.color = 'red'
@@ -25,11 +49,22 @@
             text.style.color = 'violet'
         }
 
-        const liCollection = document.getElementsByTagName('li')
+        const liCollection = document.getElementsByTagName('p')
         for (const li of liCollection) {
             console.log(li.innerText)
             li.style.color = 'blue'
         }
+
+
+        const liFruits = document.querySelectorAll('.fruits-container li')
+        for (const li of liFruits) {
+            console.log(li.innerText)
+        }
+
+
+        const liPlaces = document.querySelector('.places-container li')
+        console.log(liPlaces.innerHTML)
+        liPlaces.style.color = 'red'
 
     </script>
 </body>
