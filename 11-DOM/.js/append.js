@@ -32,7 +32,27 @@ const li3 = document.createElement('li')
 li3.innerText = 'Pant'
 ul.appendChild(li3)
 
-
 section.appendChild(ul)
 
 mainContainer.appendChild(section)
+
+
+
+
+
+
+
+
+const playerSection = document.createElement("section")
+
+playerSection.innerHTML = `
+<h1> Our Player</h1>
+<ul>
+    <li>Babar Azam</li>
+    <li>Muhammad Rizwan</li>
+    <li>Fakhar zaman</li>
+    <li>Saheen Afridi</li>
+</ul>
+`
+
+mainContainer.appendChild(playerSection)
