@@ -24,3 +24,16 @@ makePink.addEventListener("click", function () {
 document.getElementById('makeBlue').addEventListener("mouseover",function(){
     document.body.style.backgroundColor='blue'
 })
+
+
+document.getElementById("text").addEventListener("click",function(){
+    document.getElementById("text").innerText='Change by JS'
+})
+
+
+document.getElementById("add").addEventListener("click",function(){
+    
+    const value = document.getElementById("input-value").value;
+
+    document.getElementById("default-text").innerText = value
+})
