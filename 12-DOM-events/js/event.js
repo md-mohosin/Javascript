@@ -9,9 +9,9 @@ function makeRed() {
 
 
 const makePnurple = document.getElementById('makePurple')
-makePnurple.addEventListener("click",purple)
-function purple(){
-    document.body.style.backgroundColor='purple'
+makePnurple.addEventListener("click", purple)
+function purple() {
+    document.body.style.backgroundColor = 'purple'
 }
 
 
@@ -21,19 +21,23 @@ makePink.addEventListener("click", function () {
 })
 
 
-document.getElementById('makeBlue').addEventListener("mouseover",function(){
-    document.body.style.backgroundColor='blue'
+document.getElementById('makeBlue').addEventListener("mouseover", function () {
+    document.body.style.backgroundColor = 'blue'
 })
 
 
-document.getElementById("text").addEventListener("click",function(){
-    document.getElementById("text").innerText='Change by JS'
+document.getElementById("text").addEventListener("click", function () {
+    document.getElementById("text").innerText = 'Change by JS'
 })
 
 
-document.getElementById("add").addEventListener("click",function(){
-    
+document.getElementById("add").addEventListener("click", function () {
+
     const value = document.getElementById("input-value").value;
+
+    if (!value.trim()) {
+        return
+    }
 
     document.getElementById("default-text").innerText = value
 })
