@@ -155,7 +155,6 @@ console.log(reversSentence4)
 
 
 
-
 const sentence4 = 'I am learning Programming'
 
 const countA = []
@@ -165,7 +164,6 @@ for (const letter of sentence4) {
     }
 }
 console.log(countA.length)
-
 
 
 
@@ -183,7 +181,6 @@ console.log(count_a_A)
 
 
 
-
 const sentence6 = "A curious idea can evolve quickly."
 for(const letter of sentence6){
     if(letter == "a e i o u"){
@@ -194,10 +191,15 @@ for(const letter of sentence6){
 
 
 
-
 let str = "xX Hello xX World";
 
 str = str.replace(/x/g, "y");  // replace all x → y
 str = str.replace(/X/g, "Y");  // replace all X → Y
 
 console.log(str);
+
+
+
+
+const string1 =  "We are the so-called \"Vikings\" from the north.";
+const string2 =  'It\'s alright.';
