@@ -22,3 +22,14 @@ console.log(specificDate)
 console.log(specificDate.toDateString())
 console.log(specificDate.toLocaleDateString())
 console.log(specificDate.toLocaleString('en-gb'))
+
+
+const d = new Date()
+console.log(d.toString())
+console.log(d.getDate())
+console.log(d.getFullYear())
+
+const da = new Date(2018, 15, 24, 10, 33, 30);
+console.log(da.getMonth())
+console.log(da.getHours())
+console.log(da.getSeconds())

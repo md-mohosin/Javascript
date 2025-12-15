@@ -117,7 +117,6 @@ console.log(studentPropertyLength)
 
 
 
-
 let myObject = {
     name: 'John Doe',
     age: 25,
@@ -127,3 +126,18 @@ let myObject = {
 for (const key in myObject) {
     console.log(`Key: ${key} | type: ${typeof myObject[key]}`)
 }
+
+
+
+
+
+const personDetails = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+const myArray = Object.values(personDetails);
+let text = myArray.toString();
+console.log(text)
+const text2 = JSON.stringify(personDetails)
+console.log(text2)
