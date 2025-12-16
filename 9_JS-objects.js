@@ -44,9 +44,9 @@ console.log(Object.values(computer))
 
 console.log(computer.brand)
 
-console.log(computer.specs.processor)
+console.log(computer?.specs.processor)
 
-const computerStorage = computer.specs.storage
+const computerStorage = computer.specs?.storage
 console.log(computerStorage)
 
 console.log(computer.accessories[1])
@@ -143,6 +143,13 @@ const text2 = JSON.stringify(personDetails)
 console.log(text2)
 
 
+console.log(Object.entries(personDetails))
+console.log(Object.entries(personDetails)[0])
+
+for(const [key,value] of Object.entries(personDetails)){
+    console.log(key,value)
+    console.log(`${key} : ${value}`)
+}
 
 const numsArr = [11, 22, 33,]
 const [x, y, z] = numsArr;

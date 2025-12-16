@@ -132,6 +132,47 @@ const player = {
     Role: 'Batsman'
 }
 
-const {name:pName,age,birthPlace,Role} = player
+const { name: pName, age, birthPlace, Role } = player
 console.log(pName)
 console.log(birthPlace)
+
+const { name: Pname, ...others } = player
+console.log(others)
+
+
+
+const nums2 = [11, 22, 33, 44, 55, 66]
+const result2 = nums2.map(n => n * 2)
+console.log(result2)
+
+
+const nums1 = [2, 4, 6, 8]
+const result1 = nums1.map(n => n * n)
+console.log(result1)
+
+
+const friends = ['Ahad', 'Bilal', 'Wahaj', 'Dananeer']
+const result3 = friends.map(f => f.length)
+console.log(result3)
+
+
+const result4 = nums1.forEach(n => console.log(n * 2))
+console.log(result4)
+
+
+const nums5 = [40, 50, 30, 85, 70, 93]
+const result5 = nums5.filter(n => n > 50)
+console.log(result5)
+
+const result6 = nums5.filter(n => n % 2 === 0)
+console.log(result6)
+
+const players1 = ['Babar', 'Rizwan', 'Fakhar', 'Shaheen', 'Haris']
+const pResult1 = players1.filter(p => p.length > 5)
+console.log(pResult1)
+
+
+
+const sumArr = [1,4,7,9,11,3]
+const sumResult = sumArr.reduce((previous,current) => previous + current,0)
+console.log(sumResult)
