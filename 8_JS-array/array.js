@@ -17,7 +17,6 @@ console.log(ages)
 
 
 
-
 const players = ['Babar', 'Rizwan', 'Fakhar', 'Shaheen']
 console.log(players)
 
@@ -43,7 +42,6 @@ console.log(Array.isArray(user))
 
 
 
-
 const fruites = ['Apple', 'Mango', 'Orange', 'Guava', 'Lychee']
 
 console.log(fruites[2])
@@ -51,8 +49,6 @@ console.log(fruites[2])
 fruites[2] = 'Jambura'
 
 console.log(fruites)
-
-
 
 
 
@@ -69,8 +65,6 @@ console.log(touristPlace)
 
 
 
-
-
 const arr1 = ['Ahad', 'Bilal', 'Wahaj', 'Danish']
 const arr2 = ['Yumna', 'Dure', 'Dananeer', 'Sehar']
 
@@ -79,14 +73,11 @@ console.log(concatArray)
 
 
 
-
-
 const original = [11, 13, 44, 15, 76, 33]
 const copy = [...original]
 copy[0] = 999
 console.log(copy)
 console.log(original)
-
 
 
 
@@ -101,4 +92,16 @@ console.log(array2D)
 
 
 
+const cars = ["Saab", "Volvo", "BMW"];
+console.log(cars.toString())
+console.log(...cars)
+console.log(cars.splice(1, 3))
 
+
+const $fruites = ['Mango','banana','Jackfruite']
+
+console.log($fruites.join(' * '))
+
+
+const myArr = [[1,2],[3,4],[5,6]];
+console.log(myArr.flat())
