@@ -141,3 +141,9 @@ let text = myArray.toString();
 console.log(text)
 const text2 = JSON.stringify(personDetails)
 console.log(text2)
+
+
+
+const numsArr = [11, 22, 33,]
+const [x, y, z] = numsArr;
+console.log(y)

@@ -98,10 +98,40 @@ console.log(...cars)
 console.log(cars.splice(1, 3))
 
 
-const $fruites = ['Mango','banana','Jackfruite']
+const $fruites = ['Mango', 'banana', 'Jackfruite']
 
 console.log($fruites.join(' * '))
 
 
-const myArr = [[1,2],[3,4],[5,6]];
+const myArr = [[1, 2], [3, 4], [5, 6]];
 console.log(myArr.flat())
+
+
+
+const nums = [12, 34, 66, 33, 89]
+console.log(Math.max(...nums))
+
+
+
+
+const numbs1 = [11, 22, 33, 44, 55]
+const numbs2 = [...numbs1];
+numbs2.push(66)
+console.log(numbs2)
+console.log(numbs1)
+
+
+
+
+
+
+const player = {
+    name: 'Babar Azam',
+    age: 31,
+    birthPlace: 'Lahore',
+    Role: 'Batsman'
+}
+
+const {name:pName,age,birthPlace,Role} = player
+console.log(pName)
+console.log(birthPlace)
