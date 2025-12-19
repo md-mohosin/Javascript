@@ -13,12 +13,16 @@ console.log(numsLength)
 
 const ages = []
 console.log(ages)
-
+ages[0] = 20;
+ages[1] = 44;
+ages.push(55, 12, 32, 67)
+console.log('ages', ages)
 
 
 
 const players = ['Babar', 'Rizwan', 'Fakhar', 'Shaheen']
 console.log(players)
+console.log(players.at(1))
 
 console.log(players.includes('Babar'))
 
@@ -167,12 +171,48 @@ console.log(result5)
 const result6 = nums5.filter(n => n % 2 === 0)
 console.log(result6)
 
+const result7 = nums5.find(n => n > 70)
+console.log(result7)
+
 const players1 = ['Babar', 'Rizwan', 'Fakhar', 'Shaheen', 'Haris']
 const pResult1 = players1.filter(p => p.length > 5)
 console.log(pResult1)
+console.log(players1.indexOf('Fakhar'))
+console.log(players1.indexOf('Imam'))  //=> If no element is found, it returns -1.
 
 
 
-const sumArr = [1,4,7,9,11,3]
-const sumResult = sumArr.reduce((previous,current) => previous + current,0)
+const sumArr = [1, 4, 7, 9, 11, 3]
+const sumResult = sumArr.reduce((previous, current) => previous + current, 0)
 console.log(sumResult)
+
+
+
+
+const fruites2 = ['Mango', 'Apple', 'Banana', 'Orange']
+console.log(fruites2)
+console.log(fruites2.sort())
+
+console.log(fruites2.reverse())
+
+
+const months = ['December', 'Fabruary', 'January', 'March']
+console.log(months.toSorted())
+
+
+
+
+const numbs3 = [11, 44, 33, 99, 22, 66, 88]
+console.log(numbs3)
+
+const ascending = numbs3.sort(function (a, b) { return a - b })
+console.log(ascending)
+
+const descendingOrder = numbs3.toSorted(function (b, c) { return c - b })
+console.log(descendingOrder)
+
+
+const min = numbs3.reduce((a,b)=> a< b?a:b)
+const max = numbs3.reduce((a,b)=> a> b?a:b)
+console.log(min)
+console.log(max)
