@@ -199,6 +199,8 @@ console.log(fruites2.reverse())
 const months = ['December', 'Fabruary', 'January', 'March']
 console.log(months.toSorted())
 
+console.log(months.with(1,'August'))
+
 
 
 
@@ -216,3 +218,10 @@ const min = numbs3.reduce((a,b)=> a< b?a:b)
 const max = numbs3.reduce((a,b)=> a> b?a:b)
 console.log(min)
 console.log(max)
+
+
+
+const text = 'ASDFGHKL'
+console.log(Array.from(text))
+
+
