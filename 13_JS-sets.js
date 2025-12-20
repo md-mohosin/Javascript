@@ -38,6 +38,26 @@ const symmetricDifference = [...A].filter(value => !B.has(value))
 console.log(symmetricDifference)
 
 
-
 const isSubset = [...A].every(value => B.has(value))
 console.log(isSubset)
+
+
+
+
+const ws = new WeakSet()
+console.log(ws)
+
+const user = {name:"Ahad",age:32}
+
+ws.add(user)
+console.log(ws)
+console.log(ws.has(user))
+
+const user2 = {name:'Bilal',age:32}
+ws.add(user2)
+const hasUser2 = ws.has(user2)
+console.log(hasUser2)
+
+ws.delete(user2)
+console.log('user2',hasUser2)
+console.log(ws.has(user2))
