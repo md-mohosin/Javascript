@@ -76,5 +76,25 @@ class Truck extends Vehicle {
     }
 }
 
-const ashaTruck = new Truck('Asha',1500000,'2ton')
+const ashaTruck = new Truck('Asha', 1500000, '2ton')
 console.log(ashaTruck)
+
+
+
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age
+    }
+    sleep(name){
+        console.log(`Sleeping now ${this.name}`)
+        // return `Sleaping now ${this.name}`
+        // return `Sleaping now ${name}`
+    }
+}
+const person1 = new Person('Ahad', 31)
+console.log(person1)
+// console.log(person1.sleep('Ahad raza mir')).
+// console.log(person1.sleep())
+person1.sleep()

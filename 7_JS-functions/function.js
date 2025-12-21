@@ -159,4 +159,65 @@ function getDevice(devices, search) {
     return matchedProduct
 }
 
-console.log(getDevice(allDevices, 'watch')) 
+console.log(getDevice(allDevices, 'watch'))
+
+
+
+function myFunction(a, b) {
+    return arguments.length;
+}
+
+console.log(myFunction(3, 2))
+
+
+
+function myFunction2(a, b) {
+    return a * b;
+}
+
+let text = myFunction2.toString();
+console.log(text)
+
+console.log(this)
+
+
+function thisFunc() {
+    console.log(this)
+}
+thisFunc()
+
+
+const arrowFuncThis = () => {
+    console.log(this)
+}
+arrowFuncThis()
+
+
+
+const myObj = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function () {
+        return this;
+    }
+}
+console.log(myObj.fullName());
+
+
+
+(function () {
+    let text = "Hello! I called myself.";
+    console.log(text)
+})();
+
+
+
+(function (name) {
+    console.log(`My name is ${name}`)
+})('Mohsin');
+
+
+
+    ((age) => {
+        console.log(`MY age: ${age}`)
+    })(21)
