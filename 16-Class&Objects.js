@@ -41,3 +41,40 @@ console.log(pepol)
 
 sohag.lecture()
 pepol.lecture()
+
+
+
+
+class Vehicle {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    move() {
+        console.log('Gari cole na cole na')
+    }
+}
+
+
+
+class Bus extends Vehicle {
+    constructor(name, price, seat, tecketPrice) {
+        super(name, price)
+        this.seat = seat;
+        this.tecketPrice = tecketPrice
+    }
+}
+
+
+
+
+class Truck extends Vehicle {
+    constructor(name, price, load) {
+        super(name, price)
+        this.load = load;
+    }
+}
+
+const ashaTruck = new Truck('Asha',1500000,'2ton')
+console.log(ashaTruck)
