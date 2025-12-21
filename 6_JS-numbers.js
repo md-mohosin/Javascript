@@ -46,3 +46,13 @@ console.log(Number.isSafeInteger(strNum))
 console.log(Number.isSafeInteger(10))
 
 console.log(2**4)
+
+
+const numbers = 1245
+console.log(numbers)
+console.log(numbers.toString())
+console.log(numbers.toString(2))
+
+
+console.log(Number(""))
+console.log(Number(" "))
