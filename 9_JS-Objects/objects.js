@@ -188,3 +188,28 @@ console.log(person3)
 const person4 = {firstName:'Stiven',lastName:'angi'}
 Object.assign(person3,person4)
 console.log(person3)
+
+
+
+const sentence = 'Extraordinary'
+const[l1,l2,l3,l4,l5]=sentence
+console.log(l1,l3)
+
+
+
+const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
+// Destructuring
+const {[0]:fruit1 ,[1]:fruit2} = fruits;
+console.log(fruit1)
+
+
+
+const fruits2 = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+for (const [key, value] of fruits2) {
+ console.log(key,value)
+}
