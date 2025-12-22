@@ -21,11 +21,28 @@ console.log(resPers2)
 
 
 
+const actor = {
+    getActor: function (drama) {
+        return `${this.aName} from ${drama}`
+    }
+}
+
+const actor1 = {
+    aName : 'Bilal Abbas Khan'
+}
+const actor2 = {
+    aName : 'Ahad Raza Mir'
+}
+
+console.log(actor.getActor.call(actor1,'Isq Murshid'))
+console.log(actor.getActor.call(actor2,'Meem se Mohabbat'))
+
+
 
 
 const player = {
-    getRole:function(country){
-        return `${this.pName} is a ${this.role} and his Country is ${country}`
+    getRole:function(city,country){
+        return `${this.pName} is a ${this.role} from ${city} , ${country}`
     }
 }
 
@@ -38,4 +55,4 @@ const player2 ={
     role:"Wk-Batter"
 }
 
-console.log(player.getRole.call(player1,'Pakistan'))
+console.log(player.getRole.call(player1,'Lahore','Pakistan'))

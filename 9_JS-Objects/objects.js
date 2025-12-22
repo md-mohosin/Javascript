@@ -1,6 +1,6 @@
 const person = {
     name: "Ahad",
-    profession: "Actress",
+    profession: "Actor",
     age: 30,
     sallery: 30000
 }
@@ -146,11 +146,45 @@ console.log(text2)
 console.log(Object.entries(personDetails))
 console.log(Object.entries(personDetails)[0])
 
-for(const [key,value] of Object.entries(personDetails)){
-    console.log(key,value)
+for (const [key, value] of Object.entries(personDetails)) {
+    console.log(key, value)
     console.log(`${key} : ${value}`)
 }
 
 const numsArr = [11, 22, 33,]
 const [x, y, z] = numsArr;
 console.log(y)
+
+
+
+
+const person2 = {
+    firstName: "John",
+    lastName: "Doe"
+};
+const man = Object.create(person2);
+console.log(man.firstName = "Peter");
+
+
+
+const fruites = [
+    ["apples", 300],
+    ["pears", 900],
+    ["bananas", 500]
+]
+console.log(fruites)
+const fruitsObj = Object.fromEntries(fruites)
+console.log(fruitsObj)
+
+
+
+const person3={
+firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+}
+console.log(person3)
+const person4 = {firstName:'Stiven',lastName:'angi'}
+Object.assign(person3,person4)
+console.log(person3)
