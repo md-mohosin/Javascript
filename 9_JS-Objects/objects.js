@@ -178,38 +178,51 @@ console.log(fruitsObj)
 
 
 
-const person3={
-firstName: "John",
-  lastName: "Doe",
-  age: 50,
-  eyeColor: "blue"
+const person3 = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
 }
 console.log(person3)
-const person4 = {firstName:'Stiven',lastName:'angi'}
-Object.assign(person3,person4)
+const person4 = { firstName: 'Stiven', lastName: 'angi' }
+Object.assign(person3, person4)
 console.log(person3)
 
 
 
 const sentence = 'Extraordinary'
-const[l1,l2,l3,l4,l5]=sentence
-console.log(l1,l3)
+const [l1, l2, l3, l4, l5] = sentence
+console.log(l1, l3)
 
 
 
 const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
 // Destructuring
-const {[0]:fruit1 ,[1]:fruit2} = fruits;
+const { [0]: fruit1, [1]: fruit2 } = fruits;
 console.log(fruit1)
 
 
 
 const fruits2 = new Map([
-  ["apples", 500],
-  ["bananas", 300],
-  ["oranges", 200]
+    ["apples", 500],
+    ["bananas", 300],
+    ["oranges", 200]
 ]);
 
 for (const [key, value] of fruits2) {
- console.log(key,value)
+    console.log(key, value)
 }
+
+
+
+let fruites3 = [
+    { name: 'Apple', vitamin: 'a' },
+    { name: "bananas", vitamin: 'a' },
+    { name: "oranges", vitamin: 'c' },
+    { name: "kiwi", vitamin: 'c' }
+]
+
+
+fruites3 = Object.groupBy(fruites3, (value) => value.vitamin)
+console.log(fruites3)

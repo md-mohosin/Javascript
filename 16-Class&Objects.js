@@ -87,7 +87,7 @@ class Person {
         this.name = name;
         this.age = age
     }
-    sleep(name){
+    sleep(name) {
         console.log(`Sleeping now ${this.name}`)
         // return `Sleaping now ${this.name}`
         // return `Sleaping now ${name}`
@@ -98,3 +98,24 @@ console.log(person1)
 // console.log(person1.sleep('Ahad raza mir')).
 // console.log(person1.sleep())
 person1.sleep()
+
+
+
+
+
+class getAge {
+    constructor(name, birthYear) {
+        this.name = name;
+        this.birthYear = birthYear;
+    }
+
+    age(){
+        const date = new Date()
+        const age =  date.getFullYear() - this.birthYear;
+        console.log(`My name is ${this.name} and I'am ${age} years old`)
+    }
+}
+
+const Me = new getAge('Mohsin',2005)
+console.log(Me)
+Me.age()
