@@ -218,6 +218,36 @@ console.log(myObj.fullName());
 
 
 
-    ((age) => {
-        console.log(`MY age: ${age}`)
-    })(21)
+((age) => {
+    console.log(`MY age: ${age}`)
+})(21)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const myNumbers = [4, 1, -20, -7, 5, 9, -6];
+
+function removeNeg(numbers, callBack) {
+    let mayArray = [];
+    for (const n of numbers) {
+        if (callBack(n)) {
+            mayArray.push(n)
+        }
+    }
+    return mayArray
+}
+
+
+const result = removeNeg(myNumbers, (n) => n >= 0)
+console.log(result)
